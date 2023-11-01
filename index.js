@@ -19,9 +19,9 @@ admin.initializeApp({
 const app = express();
 const port = 5050;
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
-app.use(express.json());
+app.use(express.json({extended: false}));
 app.use(cors());
+app.listen(port, () => console.log(`Server running on port ${port}`));
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
