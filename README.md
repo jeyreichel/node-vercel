@@ -2,4 +2,4 @@
 
 deployment update.
 
-This project have updated vercel.json.
+This project have updated vercel.json. 
